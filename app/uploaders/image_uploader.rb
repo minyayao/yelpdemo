@@ -7,7 +7,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   if Rails.env.production?  # if app running on Heroku
     storage :fog
   else
-    storage: file  #running on localhost
+    storage :file  #running on localhost
   end
 
   # storage :file  #use this line to store on local computer
