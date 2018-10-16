@@ -82,7 +82,7 @@ class RestaurantsController < ApplicationController
       redirect_to root_url, alert: "Sorry, only admins can do that!"
     end
   end
-  
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
