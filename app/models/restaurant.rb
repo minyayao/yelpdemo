@@ -8,6 +8,6 @@ class Restaurant < ApplicationRecord
     validates :website, format: { with: /\Ahttps?:\/\/.*\z/,
     message: "must start with http:// or https://" }
     validates :address, format: { with: /\A\d+[^,]+,[^,]+, [A-Z]{2} \d{5}\z/,
-    message: "must start with http:// or https://" }
+    message: "must be in the format 350 Fifth Avenue, New York, NY 10118" }
 
 end
